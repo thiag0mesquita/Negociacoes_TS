@@ -1,6 +1,8 @@
+import { Comparavel } from "../interfaces/comparavel.js";
+import { Imprimivel } from "../utils/imprimivel.js";
 import { Negociacao } from "./negociacao.js";
 
-export class Negociacoes {
+export class Negociacoes implements Imprimivel {
     //Array<Negociacao> = Negociacao[]
     private negociacoes: Negociacao[] = [];
 
@@ -14,4 +16,7 @@ export class Negociacoes {
         return this.negociacoes;
     }
 
+    public paraTexto(): string {
+        return JSON.stringify(this.negociacoes, null, 2);
+    }
 }
