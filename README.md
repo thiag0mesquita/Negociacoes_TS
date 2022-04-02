@@ -1,4 +1,4 @@
-# Formulário de Cadastro
+# Cadastro de Negociações
 
 Projeto cadastro de Negociações renderizando o inputs na tela e importando dados consumindo uma API REST.
 
